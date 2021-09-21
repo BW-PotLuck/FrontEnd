@@ -1,9 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import Login from './components/Login';
 import Logout from './components/Logout'
+import Register from './components/Register';
+import PrivateRoute from './components/PrivateRoute';
 
 function App() {
   return (
@@ -22,6 +23,10 @@ function App() {
           <Route path='/logout'>
             <Logout />
           </Route>
+          <Route path='/login'>
+            <Register />
+          </Route>
+          {/* <PrivateRoute exact path='' component={} /> JUST HERE FOR WHEN WE NEED IT */}
         </Switch>
       </div>
     </Router>
