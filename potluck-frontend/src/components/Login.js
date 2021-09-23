@@ -31,8 +31,9 @@ const Login = () => {
                 push('/potluck')
             }).catch(err => {console.log(err.response.data)})
     }
+    
     return (
-        <div classname = 'login-container'>
+        <div className = 'login-container'>
             <h1>Please Login</h1>
             <form onSubmit={handleSubmit}>
                 <label>Username: </label>
