@@ -1,4 +1,5 @@
-import './App.css';
+
+import './Nathan.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import Login from './components/Login';
@@ -11,10 +12,14 @@ function App() {
     <Router>
       <div className="App">
         <header>
-          Potluck Planner
-          <Link to='/logout'>Logout</Link>
-          <Link to='/login'>Login</Link>
-          <Link to='/register'>Register</Link>
+          <div className = 'title'>
+          <h1>Potluck Planner</h1>
+          </div>
+          <div className = 'link-container'>
+            <Link to='/logout'>Logout</Link>
+            <Link to='/login'>Login</Link>
+            <Link to='/register'>Register</Link>
+          </div>
         </header>
         <Switch>
           <Route path='/login'>

@@ -101,7 +101,7 @@ function MainPotLuck() {
         />
       </Route>
 
-      <Route path = {'/'}>
+      <Route path = {'/main-page'}>
         <MainPage/>
       </Route>
     </Switch>

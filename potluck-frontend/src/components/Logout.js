@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import axios from 'axios';
 import {axiosWithAuth} from './../helpers/axiosWithAuth';
 
+
 const Logout = (props) => {
     useEffect(() => {
         axiosWithAuth()
@@ -14,7 +15,7 @@ const Logout = (props) => {
             }).catch(err => {console.log(err)})
     }, [])
     return (<div>
-        <h1>you are logging out</h1>
+        <h1>You are logging out.</h1>
     </div>)
 }
 

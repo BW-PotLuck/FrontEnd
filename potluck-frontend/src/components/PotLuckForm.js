@@ -12,6 +12,7 @@ export default function PotLuckForm(props){
     
 
     const{
+        disabled,
         add,
         values,
         change,
@@ -45,7 +46,7 @@ export default function PotLuckForm(props){
 
     // goto links
     const gotoHome = () =>{
-        history.push('/');
+        history.push('./main-page');
     }
     const gotoCreate = () =>{
         history.push('./potluck-form-container');

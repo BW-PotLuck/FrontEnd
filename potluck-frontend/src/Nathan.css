@@ -1,0 +1,89 @@
+/* Add CSS styling here */
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+/* 	border: 0; */
+	}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+	}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+	}
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+	}
+blockquote, q {
+	quotes: "" "";
+	}
+
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    max-width:100%; 
+    border:1px solid black;
+    
+    
+}
+html{
+	font-size:62.5%;
+    font-family: 'Zilla Slab', serif;
+}
+body{
+	font-size:1.6rem;
+	line-height:1.5;
+}
+
+header{
+    background-color:rgb(212, 164, 164);
+    display:flex;
+    justify-content:space-between;
+    border: 1px solid grey;
+}
+.title h1{
+    font-size:5.5rem;
+}
+
+.title{
+    display:flex;
+    justify-content: center;
+    margin-left:0%;
+    width:100%;
+    align-items:center;
+}
+
+
+.link-container{
+    display:flex;
+   flex-direction: column;
+   width:10%;
+   justify-content: center;
+}
+
+.link-container a{
+    display:flex;
+    justify-content: center;
+    color:rgb(248, 213, 213);
+    border:2px solid rgb(248, 213, 213);
+    background-color:rgb(24, 7, 7);
+     
+}
+.link-container a:hover{
+    color:rgb(24, 7, 7);
+    background-color:rgb(248, 213, 213);
+    border:2px solid black;
+}
+

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import axios from 'axios';
 import {useHistory} from 'react-router';
+import '../Nathan.css';
 
 const initialState = {
     username: "",
@@ -31,10 +32,10 @@ const Login = () => {
             }).catch(err => {console.log(err.response.data)})
     }
     return (
-        <div>
-            <h1>Please log in</h1>
+        <div classname = 'login-container'>
+            <h1>Please Login</h1>
             <form onSubmit={handleSubmit}>
-                <label>username: </label>
+                <label>Username: </label>
                 <input
                     id="username"
                     type="text"
@@ -42,7 +43,7 @@ const Login = () => {
                     value={formValues.username}
                     onChange={handleChange}
                 />
-                <label>password: </label>
+                <label>Password: </label>
                 <input 
                     id="password"
                     type="password"

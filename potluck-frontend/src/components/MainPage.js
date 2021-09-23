@@ -7,7 +7,7 @@ export default function MainPage(){
     const history=useHistory();
 
     const gotoHome = () =>{
-        history.push('/');
+        history.push('./main-page');
     }
     const gotoCreate = () =>{
         history.push('./potluck-form-container');
